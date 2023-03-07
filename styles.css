@@ -1,0 +1,9 @@
+body{
+  background-image: url("images/toronto-ontario.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center{
+  text-align: center;
+}
