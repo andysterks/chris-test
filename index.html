@@ -12,42 +12,44 @@
       <h1>Three Rivers Resort</h1>
       <h2>Pittsburgh’s Finest Luxury Destination</h2>
     </div>
-    <form action="results.html" method="get" class="reservation">
-      <div class="full-name">
+    <form class="reservation">
+      <div class="form-fields">
         <label for="First Name">First Name</label>
-        <input id="First Name" type="text" />
+        <input id="First Name" type="text" required />
         <label for="Last Name">Last Name</label>
-        <input id="Last Name" type="text" />
-      </div>
-      <div class="email">
+        <input id="Last Name" type="text" required />
         <label for="email">e-mail</label>
-        <input id="email" type="text" />
+        <input id="email" type="email" contains="@" required />
       </div>
-      <div class="address">
+      <div class="form-fields">
         <label for="street address">Street Address</label>
-        <input id="street address" type="text" />
+        <input id="street address" type="text" required />
         <label for="city">City</label>
-        <input id="city" type="text" />
+        <input id="city" type="text" required />
+        <br /><br />
         <label for="state/province">State/Province</label>
-        <input id="state/province" type="text" />
+        <input id="state/province" type="text" required />
         <label for="zip/postal">Zip/Postal</label>
-        <input id="zip/postal" type="text" />
+        <input id="zip/postal" type="text" required />
       </div>
-      <div class="room-info">
-        <label for="numofrooms">How Many Rooms?</label>
-        <select id="numofrooms" name="numofrooms">
+      <div class="form-fields">
+        <label for="numofrooms">Rooms:</label>
+        <select id="numofrooms" name="numofrooms" required>
+          <option value="">Select Number of Rooms</option>
           <option value="1">1</option>
           <option value="2">2</option>
         </select>
-        <label for="numofguests">How Many Adults?</label>
-        <select id="numofguests" name="numofguests">
+        <label for="numofguests">Adults:</label>
+        <select id="numofguests" name="numofguests" required>
+          <option value="">Select Number of Adults</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
         </select>
-        <label for="numofnights">How Many Nights?</label>
+        <label for="numofnights">Nights:</label>
         <select id="numofnights" name="numofnights">
+          <option value="">Select How Many Nights</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -57,7 +59,7 @@
           <option value="7">7</option>
         </select>
       </div>
-      <div class="submission">
+      <div class="form-fields">
         <button type="reset">Reset Form</button>
         <button type="submit">Confirm Reservation</button>
       </div>

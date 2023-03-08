@@ -7,3 +7,21 @@ body {
 .resort-title {
   text-align: center;
 }
+form {
+  text-align: center;
+}
+.form-fields {
+  padding: 10px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-size: 20px;
+  color: #fff;
+}
+
+input {
+  margin-right: 2%;
+}
+
+select {
+  margin-right: 2%;
+}
