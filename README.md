@@ -8,7 +8,7 @@ _Simple Booking entry form written in HTML and CSS_
 
 View it [here](https://keezer83.github.io/HotelBooking/)
 
-<image src="images/booking_form__crop.png">
+<image src="images/booking_form_crop.png">
 
 # Summary
 
