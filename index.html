@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Three Rivers Resort</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1 class="center">Three Rivers Resort</h1>
-  <h2 class="center">Pittsburgh’s Finest Luxury Destination</h2>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three Rivers Resort</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="resort-title">
+      <h1>Three Rivers Resort</h1>
+      <h2>Pittsburgh’s Finest Luxury Destination</h2>
+    </div>
+    <form action="results.html" method="get" class="reservation">
+      <div class="full-name">
+        <label for="First Name">First Name</label>
+        <input id="First Name" type="text" />
+        <label for="Last Name">Last Name</label>
+        <input id="Last Name" type="text" />
+      </div>
+      <div class="email">
+        <label for="email">e-mail</label>
+        <input id="email" type="text" />
+      </div>
+      <div class="address">
+        <label for="street address">Street Address</label>
+        <input id="street address" type="text" />
+        <label for="city">City</label>
+        <input id="city" type="text" />
+        <label for="state/province">State/Province</label>
+        <input id="state/province" type="text" />
+        <label for="zip/postal">Zip/Postal</label>
+        <input id="zip/postal" type="text" />
+      </div>
+      <div class="room-info">
+        <label for="numofrooms">How Many Rooms?</label>
+        <select id="numofrooms" name="numofrooms">
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <label for="numofguests">How Many Adults?</label>
+        <select id="numofguests" name="numofguests">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <label for="numofnights">How Many Nights?</label>
+        <select id="numofnights" name="numofnights">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+        </select>
+      </div>
+      <div class="submission">
+        <button type="reset">Reset Form</button>
+        <button type="submit">Confirm Reservation</button>
+      </div>
+    </form>
+  </body>
 </html>
